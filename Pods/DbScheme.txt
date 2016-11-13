@@ -1,0 +1,5 @@
+- Likes
+    - Thought (thought id)
+        - Username (uid): 0 or 1
+- Thoughts
+    - This is pretty self explanatory, lol

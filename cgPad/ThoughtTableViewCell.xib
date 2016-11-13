@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="Khk-5f-6ui" customClass="ThoughtTableViewCell" customModule="cgPad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Khk-5f-6ui" id="HcI-mi-k5r">
+                <rect key="frame" x="0.0" y="0.0" width="510" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2u-Ze-NId">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="97"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl5-p0-3uL">
+                                <rect key="frame" x="10" y="0.0" width="65" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="dislike">
+                                    <color key="titleColor" red="0.36235406120000002" green="0.49224489129999999" blue="0.63406735749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dislikeButtonPressed:" destination="Khk-5f-6ui" eventType="touchUpInside" id="4mq-GW-FbQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ1-Uu-XM8">
+                                <rect key="frame" x="10" y="77" width="65" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="VUZ-nq-Zbz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bl5-p0-3uL" secondAttribute="trailing" id="0gU-NH-d9N"/>
+                            <constraint firstAttribute="bottom" secondItem="yJ1-Uu-XM8" secondAttribute="bottom" id="0op-Pg-Xg4"/>
+                            <constraint firstItem="yJ1-Uu-XM8" firstAttribute="top" secondItem="bl5-p0-3uL" secondAttribute="bottom" id="R4a-wf-FUa"/>
+                            <constraint firstAttribute="trailing" secondItem="yJ1-Uu-XM8" secondAttribute="trailing" id="SEy-ou-e0g"/>
+                            <constraint firstAttribute="width" constant="75" id="W10-Wu-4E9"/>
+                            <constraint firstItem="bl5-p0-3uL" firstAttribute="top" secondItem="c2u-Ze-NId" secondAttribute="top" id="Xat-6t-dRM"/>
+                            <constraint firstItem="yJ1-Uu-XM8" firstAttribute="leading" secondItem="c2u-Ze-NId" secondAttribute="leading" constant="10" id="vdi-SS-rih"/>
+                            <constraint firstItem="bl5-p0-3uL" firstAttribute="leading" secondItem="c2u-Ze-NId" secondAttribute="leading" constant="10" id="x9j-7N-pR8"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qq0-Mi-2MR">
+                        <rect key="frame" x="435" y="0.0" width="75" height="97"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekE-UR-tbe">
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="like">
+                                    <color key="titleColor" red="0.36235406120000002" green="0.49224489129999999" blue="0.63406735749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="likeButtonPressed:" destination="Khk-5f-6ui" eventType="touchUpInside" id="j1p-2Y-W4T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq6-Vs-bes">
+                                <rect key="frame" x="0.0" y="77" width="65" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Kq6-Vs-bes" firstAttribute="top" secondItem="ekE-UR-tbe" secondAttribute="bottom" id="Dtw-MY-lOx"/>
+                            <constraint firstAttribute="bottom" secondItem="Kq6-Vs-bes" secondAttribute="bottom" id="I8C-0a-acx"/>
+                            <constraint firstAttribute="trailing" secondItem="Kq6-Vs-bes" secondAttribute="trailing" constant="10" id="KqJ-f3-OaN"/>
+                            <constraint firstItem="Kq6-Vs-bes" firstAttribute="leading" secondItem="qq0-Mi-2MR" secondAttribute="leading" id="OSC-UU-YZm"/>
+                            <constraint firstAttribute="trailing" secondItem="ekE-UR-tbe" secondAttribute="trailing" constant="10" id="att-bv-ZTb"/>
+                            <constraint firstItem="ekE-UR-tbe" firstAttribute="leading" secondItem="qq0-Mi-2MR" secondAttribute="leading" id="lbT-0Y-CBR"/>
+                            <constraint firstItem="ekE-UR-tbe" firstAttribute="top" secondItem="qq0-Mi-2MR" secondAttribute="top" id="zoC-Ys-6B4"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOd-1o-rRR">
+                        <rect key="frame" x="75" y="8" width="360" height="81"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v0-bP-lyd">
+                                <rect key="frame" x="0.0" y="0.0" width="360" height="81"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.11989853815648252" green="0.26058563185064154" blue="0.38698186528497414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3v0-bP-lyd" firstAttribute="leading" secondItem="bOd-1o-rRR" secondAttribute="leading" id="Uic-ic-hXR"/>
+                            <constraint firstAttribute="trailing" secondItem="3v0-bP-lyd" secondAttribute="trailing" id="roS-NL-Vj1"/>
+                            <constraint firstAttribute="bottom" secondItem="3v0-bP-lyd" secondAttribute="bottom" id="veA-2K-Zcn"/>
+                            <constraint firstItem="3v0-bP-lyd" firstAttribute="top" secondItem="bOd-1o-rRR" secondAttribute="top" id="xSE-Zt-NYm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qq0-Mi-2MR" firstAttribute="height" secondItem="c2u-Ze-NId" secondAttribute="height" id="41o-6h-0KF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bOd-1o-rRR" secondAttribute="bottom" id="FrF-rp-Wnh"/>
+                    <constraint firstAttribute="bottom" secondItem="c2u-Ze-NId" secondAttribute="bottom" id="H5N-Qr-HVc"/>
+                    <constraint firstItem="qq0-Mi-2MR" firstAttribute="centerY" secondItem="c2u-Ze-NId" secondAttribute="centerY" id="L4h-dc-opI"/>
+                    <constraint firstItem="bOd-1o-rRR" firstAttribute="leading" secondItem="c2u-Ze-NId" secondAttribute="trailing" id="LUf-Uc-bl6"/>
+                    <constraint firstItem="c2u-Ze-NId" firstAttribute="top" secondItem="HcI-mi-k5r" secondAttribute="top" id="Npo-T9-l9n"/>
+                    <constraint firstItem="c2u-Ze-NId" firstAttribute="leading" secondItem="HcI-mi-k5r" secondAttribute="leading" id="eqS-yb-A8g"/>
+                    <constraint firstAttribute="trailing" secondItem="qq0-Mi-2MR" secondAttribute="trailing" id="l8B-Mp-pQB"/>
+                    <constraint firstItem="yJ1-Uu-XM8" firstAttribute="height" secondItem="Kq6-Vs-bes" secondAttribute="height" id="lBc-1f-efo"/>
+                    <constraint firstItem="qq0-Mi-2MR" firstAttribute="leading" secondItem="bOd-1o-rRR" secondAttribute="trailing" id="mte-jD-Dyl"/>
+                    <constraint firstItem="bOd-1o-rRR" firstAttribute="top" secondItem="HcI-mi-k5r" secondAttribute="topMargin" id="tW5-fw-xIa"/>
+                    <constraint firstItem="qq0-Mi-2MR" firstAttribute="width" secondItem="c2u-Ze-NId" secondAttribute="width" id="vde-Bi-rfA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.27298964204782528" green="0.49986457603305251" blue="0.75848040803108807" alpha="0.34501540492957744" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="dislikeButton" destination="bl5-p0-3uL" id="EVO-L8-ms4"/>
+                <outlet property="dislikeLabel" destination="yJ1-Uu-XM8" id="odl-UJ-bxl"/>
+                <outlet property="likeButton" destination="ekE-UR-tbe" id="4Nx-v2-e3x"/>
+                <outlet property="likeLabel" destination="Kq6-Vs-bes" id="6DD-vz-j0g"/>
+                <outlet property="thoughtLabel" destination="3v0-bP-lyd" id="u0h-Dk-UAl"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="257.5"/>
+        </tableViewCell>
+    </objects>
+</document>

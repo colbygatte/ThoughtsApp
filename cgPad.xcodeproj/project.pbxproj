@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42C95A9826E3D8A0411714A9 /* Pods_cgPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3320D4CC1BCB715546F77488 /* Pods_cgPadUITests.framework */; };
+		91C5921CC76817F4A16CB79B /* Pods_cgPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425652330C739772E3A0F249 /* Pods_cgPad.framework */; };
+		D376B3C9A48BC6998E416BA5 /* Pods_cgPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86167DE8F661DB9AD676EE01 /* Pods_cgPadTests.framework */; };
+		E9561B371DD54FAC00608FAE /* ThoughtsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */; };
+		E9561B3F1DD5571400608FAE /* ElasticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B3E1DD5571400608FAE /* ElasticViewController.swift */; };
+		E9561B411DD55D3500608FAE /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B401DD55D3500608FAE /* Thought.swift */; };
+		E9561B431DD55FBA00608FAE /* AddThoughtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B421DD55FBA00608FAE /* AddThoughtViewController.swift */; };
+		E9BA0B1C1DD77E93004B2DA2 /* ThoughtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BA0B1A1DD77E93004B2DA2 /* ThoughtTableViewCell.swift */; };
+		E9BA0B1D1DD77E93004B2DA2 /* ThoughtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BA0B1B1DD77E93004B2DA2 /* ThoughtTableViewCell.xib */; };
+		E9BA0B1F1DD785F0004B2DA2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BA0B1E1DD785F0004B2DA2 /* Global.swift */; };
+		E9BA0B221DD79FC4004B2DA2 /* DbScheme.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9BA0B211DD79FC4004B2DA2 /* DbScheme.txt */; };
+		E9BA0B251DD7DB1F004B2DA2 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BA0B241DD7DB1F004B2DA2 /* PopularTableViewController.swift */; };
+		E9EB9D531DD53DEA0074B8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB9D521DD53DEA0074B8BC /* AppDelegate.swift */; };
+		E9EB9D581DD53DEA0074B8BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EB9D561DD53DEA0074B8BC /* Main.storyboard */; };
+		E9EB9D5B1DD53DEA0074B8BC /* cgPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9EB9D591DD53DEA0074B8BC /* cgPad.xcdatamodeld */; };
+		E9EB9D5D1DD53DEA0074B8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9EB9D5C1DD53DEA0074B8BC /* Assets.xcassets */; };
+		E9EB9D601DD53DEA0074B8BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EB9D5E1DD53DEA0074B8BC /* LaunchScreen.storyboard */; };
+		E9EB9D6B1DD53DEB0074B8BC /* cgPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB9D6A1DD53DEB0074B8BC /* cgPadTests.swift */; };
+		E9EB9D761DD53DEB0074B8BC /* cgPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB9D751DD53DEB0074B8BC /* cgPadUITests.swift */; };
+		E9EB9D841DD53E0C0074B8BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EB9D831DD53E0C0074B8BC /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9EB9D671DD53DEB0074B8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9EB9D471DD53DEA0074B8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9EB9D4E1DD53DEA0074B8BC;
+			remoteInfo = cgPad;
+		};
+		E9EB9D721DD53DEB0074B8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9EB9D471DD53DEA0074B8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9EB9D4E1DD53DEA0074B8BC;
+			remoteInfo = cgPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1593EA527D8B840FE05ADEFB /* Pods-cgPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cgPadUITests/Pods-cgPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3320D4CC1BCB715546F77488 /* Pods_cgPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cgPadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		425652330C739772E3A0F249 /* Pods_cgPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cgPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B6E25E6342456B5F2F8811 /* Pods-cgPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-cgPad/Pods-cgPad.release.xcconfig"; sourceTree = "<group>"; };
+		83A820B77F0D047F25D68601 /* Pods-cgPadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cgPadTests/Pods-cgPadTests.release.xcconfig"; sourceTree = "<group>"; };
+		86167DE8F661DB9AD676EE01 /* Pods_cgPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cgPadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1C831D06D888A9507FB779 /* Pods-cgPadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cgPadTests/Pods-cgPadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8076F977AFC8F9F280543E3 /* Pods-cgPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cgPadUITests/Pods-cgPadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E8528B755854010D55FB13A3 /* Pods-cgPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cgPad/Pods-cgPad.debug.xcconfig"; sourceTree = "<group>"; };
+		E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtsTableViewController.swift; sourceTree = "<group>"; };
+		E9561B3E1DD5571400608FAE /* ElasticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticViewController.swift; sourceTree = "<group>"; };
+		E9561B401DD55D3500608FAE /* Thought.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		E9561B421DD55FBA00608FAE /* AddThoughtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddThoughtViewController.swift; sourceTree = "<group>"; };
+		E9BA0B1A1DD77E93004B2DA2 /* ThoughtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtTableViewCell.swift; sourceTree = "<group>"; };
+		E9BA0B1B1DD77E93004B2DA2 /* ThoughtTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThoughtTableViewCell.xib; sourceTree = "<group>"; };
+		E9BA0B1E1DD785F0004B2DA2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E9BA0B211DD79FC4004B2DA2 /* DbScheme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DbScheme.txt; sourceTree = "<group>"; };
+		E9BA0B231DD7BF89004B2DA2 /* cgPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cgPad.entitlements; sourceTree = "<group>"; };
+		E9BA0B241DD7DB1F004B2DA2 /* PopularTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
+		E9EB9D4F1DD53DEA0074B8BC /* cgPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cgPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9EB9D521DD53DEA0074B8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9EB9D571DD53DEA0074B8BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9EB9D5A1DD53DEA0074B8BC /* cgPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cgPad.xcdatamodel; sourceTree = "<group>"; };
+		E9EB9D5C1DD53DEA0074B8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9EB9D5F1DD53DEA0074B8BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9EB9D611DD53DEA0074B8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EB9D661DD53DEB0074B8BC /* cgPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cgPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9EB9D6A1DD53DEB0074B8BC /* cgPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cgPadTests.swift; sourceTree = "<group>"; };
+		E9EB9D6C1DD53DEB0074B8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EB9D711DD53DEB0074B8BC /* cgPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cgPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9EB9D751DD53DEB0074B8BC /* cgPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cgPadUITests.swift; sourceTree = "<group>"; };
+		E9EB9D771DD53DEB0074B8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EB9D831DD53E0C0074B8BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9EB9D4C1DD53DEA0074B8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C5921CC76817F4A16CB79B /* Pods_cgPad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EB9D631DD53DEB0074B8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D376B3C9A48BC6998E416BA5 /* Pods_cgPadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EB9D6E1DD53DEB0074B8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C95A9826E3D8A0411714A9 /* Pods_cgPadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3793160314A981C3B3373947 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8528B755854010D55FB13A3 /* Pods-cgPad.debug.xcconfig */,
+				59B6E25E6342456B5F2F8811 /* Pods-cgPad.release.xcconfig */,
+				8B1C831D06D888A9507FB779 /* Pods-cgPadTests.debug.xcconfig */,
+				83A820B77F0D047F25D68601 /* Pods-cgPadTests.release.xcconfig */,
+				1593EA527D8B840FE05ADEFB /* Pods-cgPadUITests.debug.xcconfig */,
+				E8076F977AFC8F9F280543E3 /* Pods-cgPadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEAD22D6E83054B2407BABB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				425652330C739772E3A0F249 /* Pods_cgPad.framework */,
+				86167DE8F661DB9AD676EE01 /* Pods_cgPadTests.framework */,
+				3320D4CC1BCB715546F77488 /* Pods_cgPadUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9561B3C1DD556C200608FAE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */,
+				E9561B421DD55FBA00608FAE /* AddThoughtViewController.swift */,
+				E9BA0B241DD7DB1F004B2DA2 /* PopularTableViewController.swift */,
+				E9561B401DD55D3500608FAE /* Thought.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E9561B3D1DD556D000608FAE /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				E9561B3E1DD5571400608FAE /* ElasticViewController.swift */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		E9EB9D461DD53DEA0074B8BC = {
+			isa = PBXGroup;
+			children = (
+				E9EB9D511DD53DEA0074B8BC /* cgPad */,
+				E9EB9D691DD53DEB0074B8BC /* cgPadTests */,
+				E9EB9D741DD53DEB0074B8BC /* cgPadUITests */,
+				E9EB9D501DD53DEA0074B8BC /* Products */,
+				3793160314A981C3B3373947 /* Pods */,
+				DEAD22D6E83054B2407BABB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9EB9D501DD53DEA0074B8BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9EB9D4F1DD53DEA0074B8BC /* cgPad.app */,
+				E9EB9D661DD53DEB0074B8BC /* cgPadTests.xctest */,
+				E9EB9D711DD53DEB0074B8BC /* cgPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9EB9D511DD53DEA0074B8BC /* cgPad */ = {
+			isa = PBXGroup;
+			children = (
+				E9BA0B1A1DD77E93004B2DA2 /* ThoughtTableViewCell.swift */,
+				E9BA0B1B1DD77E93004B2DA2 /* ThoughtTableViewCell.xib */,
+				E9EB9D561DD53DEA0074B8BC /* Main.storyboard */,
+				E9561B3C1DD556C200608FAE /* Main */,
+				E9BA0B1E1DD785F0004B2DA2 /* Global.swift */,
+				E9EB9D521DD53DEA0074B8BC /* AppDelegate.swift */,
+				E9EB9D5C1DD53DEA0074B8BC /* Assets.xcassets */,
+				E9EB9D5E1DD53DEA0074B8BC /* LaunchScreen.storyboard */,
+				E9EB9D611DD53DEA0074B8BC /* Info.plist */,
+				E9EB9D591DD53DEA0074B8BC /* cgPad.xcdatamodeld */,
+				E9BA0B231DD7BF89004B2DA2 /* cgPad.entitlements */,
+				E9EB9D831DD53E0C0074B8BC /* GoogleService-Info.plist */,
+				E9BA0B211DD79FC4004B2DA2 /* DbScheme.txt */,
+				E9561B3D1DD556D000608FAE /* Test */,
+			);
+			path = cgPad;
+			sourceTree = "<group>";
+		};
+		E9EB9D691DD53DEB0074B8BC /* cgPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9EB9D6A1DD53DEB0074B8BC /* cgPadTests.swift */,
+				E9EB9D6C1DD53DEB0074B8BC /* Info.plist */,
+			);
+			path = cgPadTests;
+			sourceTree = "<group>";
+		};
+		E9EB9D741DD53DEB0074B8BC /* cgPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9EB9D751DD53DEB0074B8BC /* cgPadUITests.swift */,
+				E9EB9D771DD53DEB0074B8BC /* Info.plist */,
+			);
+			path = cgPadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9EB9D4E1DD53DEA0074B8BC /* cgPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9EB9D7A1DD53DEB0074B8BC /* Build configuration list for PBXNativeTarget "cgPad" */;
+			buildPhases = (
+				B0C471336789D269A568E331 /* [CP] Check Pods Manifest.lock */,
+				E9EB9D4B1DD53DEA0074B8BC /* Sources */,
+				E9EB9D4C1DD53DEA0074B8BC /* Frameworks */,
+				E9EB9D4D1DD53DEA0074B8BC /* Resources */,
+				FA7D99FD7AF82CA6EAF26CA4 /* [CP] Embed Pods Frameworks */,
+				FB573DD3C337704F20424B7B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cgPad;
+			productName = cgPad;
+			productReference = E9EB9D4F1DD53DEA0074B8BC /* cgPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9EB9D651DD53DEB0074B8BC /* cgPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9EB9D7D1DD53DEB0074B8BC /* Build configuration list for PBXNativeTarget "cgPadTests" */;
+			buildPhases = (
+				A262C530F65F5985A8017CDF /* [CP] Check Pods Manifest.lock */,
+				E9EB9D621DD53DEB0074B8BC /* Sources */,
+				E9EB9D631DD53DEB0074B8BC /* Frameworks */,
+				E9EB9D641DD53DEB0074B8BC /* Resources */,
+				C6BFC5D101622D3264F82DE9 /* [CP] Embed Pods Frameworks */,
+				0467980F10B5D06E53F47663 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9EB9D681DD53DEB0074B8BC /* PBXTargetDependency */,
+			);
+			name = cgPadTests;
+			productName = cgPadTests;
+			productReference = E9EB9D661DD53DEB0074B8BC /* cgPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9EB9D701DD53DEB0074B8BC /* cgPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9EB9D801DD53DEB0074B8BC /* Build configuration list for PBXNativeTarget "cgPadUITests" */;
+			buildPhases = (
+				4DDA577C1E4AF65D0D2A1098 /* [CP] Check Pods Manifest.lock */,
+				E9EB9D6D1DD53DEB0074B8BC /* Sources */,
+				E9EB9D6E1DD53DEB0074B8BC /* Frameworks */,
+				E9EB9D6F1DD53DEB0074B8BC /* Resources */,
+				A93A8CFE3705BCACB105EEDD /* [CP] Embed Pods Frameworks */,
+				6EC5B36B3085E8DE8FB0A087 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9EB9D731DD53DEB0074B8BC /* PBXTargetDependency */,
+			);
+			name = cgPadUITests;
+			productName = cgPadUITests;
+			productReference = E9EB9D711DD53DEB0074B8BC /* cgPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9EB9D471DD53DEA0074B8BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = colbyg;
+				TargetAttributes = {
+					E9EB9D4E1DD53DEA0074B8BC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6BTW725B4B;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					E9EB9D651DD53DEB0074B8BC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9EB9D4E1DD53DEA0074B8BC;
+					};
+					E9EB9D701DD53DEB0074B8BC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9EB9D4E1DD53DEA0074B8BC;
+					};
+				};
+			};
+			buildConfigurationList = E9EB9D4A1DD53DEA0074B8BC /* Build configuration list for PBXProject "cgPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9EB9D461DD53DEA0074B8BC;
+			productRefGroup = E9EB9D501DD53DEA0074B8BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9EB9D4E1DD53DEA0074B8BC /* cgPad */,
+				E9EB9D651DD53DEB0074B8BC /* cgPadTests */,
+				E9EB9D701DD53DEB0074B8BC /* cgPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9EB9D4D1DD53DEA0074B8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EB9D841DD53E0C0074B8BC /* GoogleService-Info.plist in Resources */,
+				E9EB9D601DD53DEA0074B8BC /* LaunchScreen.storyboard in Resources */,
+				E9EB9D5D1DD53DEA0074B8BC /* Assets.xcassets in Resources */,
+				E9BA0B1D1DD77E93004B2DA2 /* ThoughtTableViewCell.xib in Resources */,
+				E9EB9D581DD53DEA0074B8BC /* Main.storyboard in Resources */,
+				E9BA0B221DD79FC4004B2DA2 /* DbScheme.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EB9D641DD53DEB0074B8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EB9D6F1DD53DEB0074B8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0467980F10B5D06E53F47663 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cgPadTests/Pods-cgPadTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DDA577C1E4AF65D0D2A1098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC5B36B3085E8DE8FB0A087 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cgPadUITests/Pods-cgPadUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A262C530F65F5985A8017CDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A93A8CFE3705BCACB105EEDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cgPadUITests/Pods-cgPadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C471336789D269A568E331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6BFC5D101622D3264F82DE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cgPadTests/Pods-cgPadTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7D99FD7AF82CA6EAF26CA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cgPad/Pods-cgPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB573DD3C337704F20424B7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cgPad/Pods-cgPad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9EB9D4B1DD53DEA0074B8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BA0B1F1DD785F0004B2DA2 /* Global.swift in Sources */,
+				E9BA0B1C1DD77E93004B2DA2 /* ThoughtTableViewCell.swift in Sources */,
+				E9EB9D5B1DD53DEA0074B8BC /* cgPad.xcdatamodeld in Sources */,
+				E9561B411DD55D3500608FAE /* Thought.swift in Sources */,
+				E9EB9D531DD53DEA0074B8BC /* AppDelegate.swift in Sources */,
+				E9561B3F1DD5571400608FAE /* ElasticViewController.swift in Sources */,
+				E9561B431DD55FBA00608FAE /* AddThoughtViewController.swift in Sources */,
+				E9561B371DD54FAC00608FAE /* ThoughtsTableViewController.swift in Sources */,
+				E9BA0B251DD7DB1F004B2DA2 /* PopularTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EB9D621DD53DEB0074B8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EB9D6B1DD53DEB0074B8BC /* cgPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EB9D6D1DD53DEB0074B8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EB9D761DD53DEB0074B8BC /* cgPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9EB9D681DD53DEB0074B8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9EB9D4E1DD53DEA0074B8BC /* cgPad */;
+			targetProxy = E9EB9D671DD53DEB0074B8BC /* PBXContainerItemProxy */;
+		};
+		E9EB9D731DD53DEB0074B8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9EB9D4E1DD53DEA0074B8BC /* cgPad */;
+			targetProxy = E9EB9D721DD53DEB0074B8BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9EB9D561DD53DEA0074B8BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9EB9D571DD53DEA0074B8BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9EB9D5E1DD53DEA0074B8BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9EB9D5F1DD53DEA0074B8BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9EB9D781DD53DEB0074B8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9EB9D791DD53DEB0074B8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9EB9D7B1DD53DEB0074B8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8528B755854010D55FB13A3 /* Pods-cgPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cgPad/cgPad.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6BTW725B4B;
+				INFOPLIST_FILE = cgPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.cgPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E9EB9D7C1DD53DEB0074B8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B6E25E6342456B5F2F8811 /* Pods-cgPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cgPad/cgPad.entitlements;
+				DEVELOPMENT_TEAM = 6BTW725B4B;
+				INFOPLIST_FILE = cgPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.cgPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E9EB9D7E1DD53DEB0074B8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1C831D06D888A9507FB779 /* Pods-cgPadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Core/Sources",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseUI\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterCore\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterKit\"",
+					"${PODS_ROOT}/Firebase/Analytics/Sources",
+				);
+				INFOPLIST_FILE = cgPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.cgPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cgPad.app/cgPad";
+			};
+			name = Debug;
+		};
+		E9EB9D7F1DD53DEB0074B8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A820B77F0D047F25D68601 /* Pods-cgPadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = cgPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.cgPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cgPad.app/cgPad";
+			};
+			name = Release;
+		};
+		E9EB9D811DD53DEB0074B8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1593EA527D8B840FE05ADEFB /* Pods-cgPadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = cgPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.cgPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = cgPad;
+			};
+			name = Debug;
+		};
+		E9EB9D821DD53DEB0074B8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8076F977AFC8F9F280543E3 /* Pods-cgPadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = cgPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.cgPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = cgPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9EB9D4A1DD53DEA0074B8BC /* Build configuration list for PBXProject "cgPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EB9D781DD53DEB0074B8BC /* Debug */,
+				E9EB9D791DD53DEB0074B8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9EB9D7A1DD53DEB0074B8BC /* Build configuration list for PBXNativeTarget "cgPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EB9D7B1DD53DEB0074B8BC /* Debug */,
+				E9EB9D7C1DD53DEB0074B8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9EB9D7D1DD53DEB0074B8BC /* Build configuration list for PBXNativeTarget "cgPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EB9D7E1DD53DEB0074B8BC /* Debug */,
+				E9EB9D7F1DD53DEB0074B8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9EB9D801DD53DEB0074B8BC /* Build configuration list for PBXNativeTarget "cgPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EB9D811DD53DEB0074B8BC /* Debug */,
+				E9EB9D821DD53DEB0074B8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9EB9D591DD53DEA0074B8BC /* cgPad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9EB9D5A1DD53DEA0074B8BC /* cgPad.xcdatamodel */,
+			);
+			currentVersion = E9EB9D5A1DD53DEA0074B8BC /* cgPad.xcdatamodel */;
+			path = cgPad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9EB9D471DD53DEA0074B8BC /* Project object */;
+}
