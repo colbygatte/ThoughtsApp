@@ -10,6 +10,7 @@
 		42C95A9826E3D8A0411714A9 /* Pods_cgPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3320D4CC1BCB715546F77488 /* Pods_cgPadUITests.framework */; };
 		91C5921CC76817F4A16CB79B /* Pods_cgPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425652330C739772E3A0F249 /* Pods_cgPad.framework */; };
 		D376B3C9A48BC6998E416BA5 /* Pods_cgPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86167DE8F661DB9AD676EE01 /* Pods_cgPadTests.framework */; };
+		E9427EBC1DD90BEC00A72768 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9427EBB1DD90BEC00A72768 /* Database.swift */; };
 		E9561B371DD54FAC00608FAE /* ThoughtsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */; };
 		E9561B3F1DD5571400608FAE /* ElasticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B3E1DD5571400608FAE /* ElasticViewController.swift */; };
 		E9561B411DD55D3500608FAE /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B401DD55D3500608FAE /* Thought.swift */; };
@@ -56,6 +57,7 @@
 		8B1C831D06D888A9507FB779 /* Pods-cgPadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cgPadTests/Pods-cgPadTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8076F977AFC8F9F280543E3 /* Pods-cgPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cgPadUITests/Pods-cgPadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E8528B755854010D55FB13A3 /* Pods-cgPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cgPad/Pods-cgPad.debug.xcconfig"; sourceTree = "<group>"; };
+		E9427EBB1DD90BEC00A72768 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtsTableViewController.swift; sourceTree = "<group>"; };
 		E9561B3E1DD5571400608FAE /* ElasticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticViewController.swift; sourceTree = "<group>"; };
 		E9561B401DD55D3500608FAE /* Thought.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
@@ -133,13 +135,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E9427EBA1DD90B6900A72768 /* ThoughtCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9BA0B1A1DD77E93004B2DA2 /* ThoughtTableViewCell.swift */,
+				E9BA0B1B1DD77E93004B2DA2 /* ThoughtTableViewCell.xib */,
+			);
+			name = ThoughtCell;
+			sourceTree = "<group>";
+		};
 		E9561B3C1DD556C200608FAE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E9BA0B241DD7DB1F004B2DA2 /* PopularTableViewController.swift */,
 				E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */,
 				E9561B421DD55FBA00608FAE /* AddThoughtViewController.swift */,
-				E9BA0B241DD7DB1F004B2DA2 /* PopularTableViewController.swift */,
+				E9427EBB1DD90BEC00A72768 /* Database.swift */,
 				E9561B401DD55D3500608FAE /* Thought.swift */,
+				E9427EBA1DD90B6900A72768 /* ThoughtCell */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -177,8 +190,6 @@
 		E9EB9D511DD53DEA0074B8BC /* cgPad */ = {
 			isa = PBXGroup;
 			children = (
-				E9BA0B1A1DD77E93004B2DA2 /* ThoughtTableViewCell.swift */,
-				E9BA0B1B1DD77E93004B2DA2 /* ThoughtTableViewCell.xib */,
 				E9EB9D561DD53DEA0074B8BC /* Main.storyboard */,
 				E9561B3C1DD556C200608FAE /* Main */,
 				E9BA0B1E1DD785F0004B2DA2 /* Global.swift */,
@@ -511,6 +522,7 @@
 				E9561B3F1DD5571400608FAE /* ElasticViewController.swift in Sources */,
 				E9561B431DD55FBA00608FAE /* AddThoughtViewController.swift in Sources */,
 				E9561B371DD54FAC00608FAE /* ThoughtsTableViewController.swift in Sources */,
+				E9427EBC1DD90BEC00A72768 /* Database.swift in Sources */,
 				E9BA0B251DD7DB1F004B2DA2 /* PopularTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

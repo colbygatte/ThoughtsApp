@@ -40,6 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        
+        
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             
@@ -66,8 +68,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ThoughtsSettings.dateFormatter.dateFormat = ThoughtsSettings.dateFormat
         ThoughtsSettings.enUSPosixLocale = ThoughtsSettings.enUSPosixLocale
         
-        
-
         return true
     }
 

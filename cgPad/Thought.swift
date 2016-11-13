@@ -26,7 +26,7 @@ class Thought: NSObject {
     var createdAt: String!
     var likes: [Int:Int]!
     
-    var likeExists: Bool = true
+    //var likeExists: Bool = true
     
     init(with snapshot: FIRDataSnapshot, uid: String) {
         super.init()
@@ -35,7 +35,6 @@ class Thought: NSObject {
         self.uid = uid
         
         let values = snapshot.value as! [String:Any]
-        
         self.setValues(values: values)
     }
     
@@ -92,14 +91,11 @@ class Thought: NSObject {
     }
     
     
-    
     // how to i let this return true/false to let user know of like or not liked?
     func like(likeValue: Int, completion: (()->())? = nil) {
         
-        
         if self.fireRef != nil {
-            // check to see if this user has liked it already
-            
+            // @@@@ check to see if this user has liked it already
 
             Db.likes.child(self.uid).observeSingleEvent(of: .value, with: { (snapshot: FIRDataSnapshot) in
                 // Now we are in cgPad/likes/(uid)/(list of thought:likeValue)

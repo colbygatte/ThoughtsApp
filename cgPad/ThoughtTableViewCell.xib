@@ -16,20 +16,20 @@
             <rect key="frame" x="0.0" y="0.0" width="510" height="98"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Khk-5f-6ui" id="HcI-mi-k5r">
-                <rect key="frame" x="0.0" y="0.0" width="510" height="97"/>
+                <rect key="frame" x="0.0" y="0.0" width="510" height="97.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2u-Ze-NId">
                         <rect key="frame" x="0.0" y="0.0" width="75" height="97"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl5-p0-3uL">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dislike" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl5-p0-3uL">
                                 <rect key="frame" x="10" y="0.0" width="65" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="dislike">
                                     <color key="titleColor" red="0.36235406120000002" green="0.49224489129999999" blue="0.63406735749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="dislikeButtonPressed:" destination="Khk-5f-6ui" eventType="touchUpInside" id="4mq-GW-FbQ"/>
+                                    <action selector="likeButtonPressed:" destination="Khk-5f-6ui" eventType="touchUpInside" id="q1f-Gf-8kQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ1-Uu-XM8">
@@ -56,7 +56,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qq0-Mi-2MR">
                         <rect key="frame" x="435" y="0.0" width="75" height="97"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekE-UR-tbe">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="like" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekE-UR-tbe">
                                 <rect key="frame" x="0.0" y="0.0" width="65" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="like">
@@ -116,15 +116,15 @@
                     <constraint firstItem="qq0-Mi-2MR" firstAttribute="width" secondItem="c2u-Ze-NId" secondAttribute="width" id="vde-Bi-rfA"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.27298964204782528" green="0.49986457603305251" blue="0.75848040803108807" alpha="0.34501540492957744" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.74823600053787231" green="0.82878977060317993" blue="0.91606277227401733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
-                <outlet property="dislikeButton" destination="bl5-p0-3uL" id="EVO-L8-ms4"/>
+                <outlet property="dislikeButton" destination="bl5-p0-3uL" id="t0l-c0-G6B"/>
                 <outlet property="dislikeLabel" destination="yJ1-Uu-XM8" id="odl-UJ-bxl"/>
-                <outlet property="likeButton" destination="ekE-UR-tbe" id="4Nx-v2-e3x"/>
+                <outlet property="likeButton" destination="ekE-UR-tbe" id="2hj-Va-Htd"/>
                 <outlet property="likeLabel" destination="Kq6-Vs-bes" id="6DD-vz-j0g"/>
                 <outlet property="thoughtLabel" destination="3v0-bP-lyd" id="u0h-Dk-UAl"/>
             </connections>
-            <point key="canvasLocation" x="66" y="257.5"/>
+            <point key="canvasLocation" x="103" y="289"/>
         </tableViewCell>
     </objects>
 </document>

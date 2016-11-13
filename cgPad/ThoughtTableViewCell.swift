@@ -32,21 +32,25 @@ class ThoughtTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func dislikeButtonPressed(_ sender: Any) {
-        self.thought.like(likeValue: 1, completion: {
-        
-            if self.updateManually {
-                self.thought.update(completion: {
-                    print("@@@@@ updating DISLIKE label")
-                    self.dislikeLabel.text = String(self.thought.likes[1]!)
-                    self.likeLabel.text = String(self.thought.likes[0]!)
-                })
-            }
-        })
+    func cellSetup(_ thought: Thought) {
+        self.thought = thought
+        self.thoughtLabel.text = thought.thought
+        self.likeLabel.text = String(thought.likes[0]!)
+        self.dislikeLabel.text = String(thought.likes[1]!)
+        self.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 100)
     }
     
     @IBAction func likeButtonPressed(_ sender: Any) {
-        self.thought.like(likeValue: 0, completion: {
+        let button = sender as! UIButton
+        let likeValue: Int!
+        
+        if button.restorationIdentifier == "like" {
+            likeValue = 0
+        } else {
+            likeValue = 1
+        }
+        
+        self.thought.like(likeValue: likeValue, completion: {
         
             if self.updateManually {
                 self.thought.update(completion: {
