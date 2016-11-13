@@ -25,30 +25,34 @@ class ThoughtsTableViewController: UITableViewController {
         
         self.tableView.estimatedRowHeight = 120
         
-        // @@@@ is this login method okay?
-        self.waitForLogin()
+        FIRAuth.auth()?.signInAnonymously(completion: { (user: FIRUser?, error: Error?) in
+            if error == nil {
+                Db.user = user!
+                Db.loggedIn = true
+            } else {
+                print("12> " + (error?.localizedDescription)!)
+            }
+            print("\n\n@@@@ logged in")
+            
+            // START APP:
+            self.loginComplete()
+            
+        })
+        
     }
     
-    func waitForLogin() {
-        if Db.loggedIn {
-           // Db.thoughts.queryOrdered(byChild: "user").queryEqual(toValue: Db.user.uid).observe(.value, with:{ (snapshot: FIRDataSnapshot) in // OLD
-            Db.thoughts.queryOrderedByKey().observe(.value, with:{ (snapshot: FIRDataSnapshot) in
-                UserThoughts.thoughts = [Thought]() // reset cuz it's live
-                for snap in snapshot.children.reversed() {
-                    let thought = Thought(with: snap as! FIRDataSnapshot, uid: Db.user.uid)
-                    UserThoughts.thoughts.append(thought)
-                }
-                
-                DispatchQueue.main.async() {
-                    self.tableView.reloadData()
-                }
-            })
-        } else {
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                print("\n\n@@@@ waiting for login....")
-                self.waitForLogin()
+    func loginComplete() {
+        Db.thoughts.queryOrderedByKey().observe(.value, with:{ (snapshot: FIRDataSnapshot) in
+            UserThoughts.thoughts = [Thought]() // reset cuz it's live
+            for snap in snapshot.children.reversed() {
+                let thought = Thought(with: snap as! FIRDataSnapshot, uid: Db.user.uid)
+                UserThoughts.thoughts.append(thought)
             }
-        }
+            
+            DispatchQueue.main.async() {
+                self.tableView.reloadData()
+            }
+        })
     }
     
 

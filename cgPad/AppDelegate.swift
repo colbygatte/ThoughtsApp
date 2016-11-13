@@ -56,16 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         print("\n\n@@@@ here")
-        FIRAuth.auth()?.signInAnonymously(completion: { (user: FIRUser?, error: Error?) in
-            if error == nil {
-                Db.user = user!
-                Db.loggedIn = true
-            } else {
-                print("12> " + (error?.localizedDescription)!)
-            }
-            print("\n\n@@@@ logged in")
-            
-        })
     
         UserThoughts.thoughts = [Thought]()
         
