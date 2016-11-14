@@ -18,7 +18,7 @@ struct ThoughtsSettings {
     struct UI {
         //static var viewBGColor = UIColor(red: 0xBF, green: 0xd3, blue: 0xea, alpha: 1.0)
         static var viewBGColor = UIColor(netHex: 0xBFD3EA)
-        static var tableSeparatorColor = UIColor.blue
+        static var tableSeparatorColor = UIColor(netHex: 0xBFD3EA)
     }
 }
 
@@ -30,8 +30,9 @@ struct Db {
 }
 
 struct UserThoughts {
-    static var thoughts: [Thought]!
-    static var popularThoughts: [Thought]!
+    static var thoughts: [Thought] = [Thought]()
+    static var popularThoughts: [Thought] = [Thought]()
+    static var userLikedThoughts: [Thought] = [Thought]()
 }
 
 
@@ -54,6 +55,7 @@ extension UITableViewController {
         self.tableView.estimatedRowHeight = 120
         self.tableView.backgroundColor = ThoughtsSettings.UI.viewBGColor
         self.tableView.separatorColor = ThoughtsSettings.UI.tableSeparatorColor
+        self.tableView.separatorStyle = .none
         self.setupElasticRefresh(reload: reload)
     }
 }

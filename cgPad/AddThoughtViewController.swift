@@ -9,14 +9,16 @@
 import UIKit
 import Firebase
 
-protocol AddThoughtViewController_DidAddThought {
-    func addThoughtViewController_DidAddThought(_:Thought)
+protocol AddThoughtViewController_Delegate {
+    func addThoughtViewController_DidAddThought(_ thought: Thought)
 }
 
 class AddThoughtViewController: UITableViewController {
     
     @IBOutlet weak var thoughtTextField: UITextField!
     @IBOutlet weak var warningLabel: UILabel!
+    
+    var delegate: AddThoughtViewController_Delegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +37,8 @@ class AddThoughtViewController: UITableViewController {
         } else if charCount < 4 {
             self.warningLabel.text = "your thought is a tad short"
         } else {
-            _ = Thought(new: self.thoughtTextField.text!, uid: Db.user.uid, save: true)
+            let thought = Thought(new: self.thoughtTextField.text!, uid: Db.user.uid, save: true)
+            self.delegate.addThoughtViewController_DidAddThought(thought)
             _ = self.navigationController?.popViewController(animated: true)
         }
     }

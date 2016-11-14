@@ -14,29 +14,34 @@ import Firebase
 import FirebaseAuth
 
 
-class ThoughtsTableViewController: UITableViewController {
+class ThoughtsTableViewController: UITableViewController, AddThoughtViewController_Delegate {
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupTable(reload: {
-            print("@@@@ I AM LOADING SOMETHING RIGHT THIS SECOND!!!!!")
-        })
-        
         Database.anonymousLogin() {
-            Database.getAllThoughts() {
-                self.tableView.reloadData()
-            }
+            self.setupTable(reload: {
+                self.getAllThoughts()
+            })
+            self.getAllThoughts()
         }
     }
     
+    func getAllThoughts() {
+        Database.getAllThoughts() {
+            self.tableView.reloadData()
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    
+    func addThoughtViewController_DidAddThought(_ thought: Thought) {
+        UserThoughts.thoughts.insert(thought, at: 0)
+        self.tableView.reloadData()
+    }
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,10 +53,13 @@ class ThoughtsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ThoughtCell", for: indexPath) as! ThoughtTableViewCell
         
         cell.cellSetup(UserThoughts.thoughts[indexPath.row])
+        cell.updateManually = true // if want to change, change the query
 
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddThoughtViewController
+        vc.delegate = self
     }
 }

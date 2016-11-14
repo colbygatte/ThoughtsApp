@@ -11,6 +11,9 @@
 		91C5921CC76817F4A16CB79B /* Pods_cgPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425652330C739772E3A0F249 /* Pods_cgPad.framework */; };
 		D376B3C9A48BC6998E416BA5 /* Pods_cgPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86167DE8F661DB9AD676EE01 /* Pods_cgPadTests.framework */; };
 		E9427EBC1DD90BEC00A72768 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9427EBB1DD90BEC00A72768 /* Database.swift */; };
+		E9427EC01DD94C5100A72768 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9427EBF1DD94C5100A72768 /* MainViewController.swift */; };
+		E9427EC21DD94D5400A72768 /* thought.png in Resources */ = {isa = PBXBuildFile; fileRef = E9427EC11DD94D5400A72768 /* thought.png */; };
+		E9427EC41DD94FD100A72768 /* CurrentUserLikedThoughtsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9427EC31DD94FD100A72768 /* CurrentUserLikedThoughtsTableViewController.swift */; };
 		E9561B371DD54FAC00608FAE /* ThoughtsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */; };
 		E9561B3F1DD5571400608FAE /* ElasticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B3E1DD5571400608FAE /* ElasticViewController.swift */; };
 		E9561B411DD55D3500608FAE /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9561B401DD55D3500608FAE /* Thought.swift */; };
@@ -58,6 +61,9 @@
 		E8076F977AFC8F9F280543E3 /* Pods-cgPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cgPadUITests/Pods-cgPadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E8528B755854010D55FB13A3 /* Pods-cgPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cgPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cgPad/Pods-cgPad.debug.xcconfig"; sourceTree = "<group>"; };
 		E9427EBB1DD90BEC00A72768 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		E9427EBF1DD94C5100A72768 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E9427EC11DD94D5400A72768 /* thought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thought.png; sourceTree = "<group>"; };
+		E9427EC31DD94FD100A72768 /* CurrentUserLikedThoughtsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserLikedThoughtsTableViewController.swift; sourceTree = "<group>"; };
 		E9561B361DD54FAC00608FAE /* ThoughtsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtsTableViewController.swift; sourceTree = "<group>"; };
 		E9561B3E1DD5571400608FAE /* ElasticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticViewController.swift; sourceTree = "<group>"; };
 		E9561B401DD55D3500608FAE /* Thought.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 				E9561B421DD55FBA00608FAE /* AddThoughtViewController.swift */,
 				E9427EBB1DD90BEC00A72768 /* Database.swift */,
 				E9561B401DD55D3500608FAE /* Thought.swift */,
+				E9BA0B1E1DD785F0004B2DA2 /* Global.swift */,
 				E9427EBA1DD90B6900A72768 /* ThoughtCell */,
 			);
 			name = Main;
@@ -191,8 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				E9EB9D561DD53DEA0074B8BC /* Main.storyboard */,
+				E9427EC31DD94FD100A72768 /* CurrentUserLikedThoughtsTableViewController.swift */,
+				E9427EC11DD94D5400A72768 /* thought.png */,
 				E9561B3C1DD556C200608FAE /* Main */,
-				E9BA0B1E1DD785F0004B2DA2 /* Global.swift */,
+				E9427EBF1DD94C5100A72768 /* MainViewController.swift */,
 				E9EB9D521DD53DEA0074B8BC /* AppDelegate.swift */,
 				E9EB9D5C1DD53DEA0074B8BC /* Assets.xcassets */,
 				E9EB9D5E1DD53DEA0074B8BC /* LaunchScreen.storyboard */,
@@ -348,6 +357,7 @@
 			files = (
 				E9EB9D841DD53E0C0074B8BC /* GoogleService-Info.plist in Resources */,
 				E9EB9D601DD53DEA0074B8BC /* LaunchScreen.storyboard in Resources */,
+				E9427EC21DD94D5400A72768 /* thought.png in Resources */,
 				E9EB9D5D1DD53DEA0074B8BC /* Assets.xcassets in Resources */,
 				E9BA0B1D1DD77E93004B2DA2 /* ThoughtTableViewCell.xib in Resources */,
 				E9EB9D581DD53DEA0074B8BC /* Main.storyboard in Resources */,
@@ -515,8 +525,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9BA0B1F1DD785F0004B2DA2 /* Global.swift in Sources */,
+				E9427EC01DD94C5100A72768 /* MainViewController.swift in Sources */,
 				E9BA0B1C1DD77E93004B2DA2 /* ThoughtTableViewCell.swift in Sources */,
 				E9EB9D5B1DD53DEA0074B8BC /* cgPad.xcdatamodeld in Sources */,
+				E9427EC41DD94FD100A72768 /* CurrentUserLikedThoughtsTableViewController.swift in Sources */,
 				E9561B411DD55D3500608FAE /* Thought.swift in Sources */,
 				E9EB9D531DD53DEA0074B8BC /* AppDelegate.swift in Sources */,
 				E9561B3F1DD5571400608FAE /* ElasticViewController.swift in Sources */,

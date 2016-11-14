@@ -21,24 +21,36 @@ class Thought: NSObject {
     
     var fireRef: FIRDatabaseReference?
     var uid: String!
-    
     var thought: String!
     var createdAt: String!
     var likes: [Int:Int]!
     
     //var likeExists: Bool = true
     
-    init(with snapshot: FIRDataSnapshot, uid: String) {
+    init(getWithId: String, completion: (()->())? = nil) {
+        super.init()
+        
+        Db.thoughts.child(getWithId).observeSingleEvent(of: .value, with:{ (snapshot: FIRDataSnapshot) in
+            self.fireRef = snapshot.ref
+            
+            if snapshot.childrenCount != 0 { // means it was deleted
+                self.setValues(values: snapshot.value as! [String:Any])
+            }
+            
+            if completion != nil {
+                completion!()
+            }
+        })
+    }
+    
+    init(with snapshot: FIRDataSnapshot) {
         super.init()
         
         self.fireRef = snapshot.ref
-        self.uid = uid
-        
-        let values = snapshot.value as! [String:Any]
-        self.setValues(values: values)
+        self.setValues(values: snapshot.value as! [String:Any])
     }
     
-    init(new thought: String, uid: String, save: Bool) {
+    init(new thought: String, uid: String, save: Bool, completion: (()->())? = nil) {
         super.init()
         
         self.likes = [:]
@@ -52,18 +64,22 @@ class Thought: NSObject {
         if save {
             let thoughtDbEntry = Db.thoughts.childByAutoId()
             thoughtDbEntry.setValue(self.toAnyObject())
-            
             self.fireRef = thoughtDbEntry.ref
+            if completion != nil {
+                completion!()
+            }
         }
     }
     
     func setValues(values: [String:Any]) {
         self.thought = values["thought"] as! String
         self.createdAt = values["createdAt"] as! String
+        self.uid = values["user"] as! String
         
         self.likes = [:]
         self.likes[0] = (values["0"] as! Int)
         self.likes[1] = (values["1"] as! Int)
+        
     }
     
     func toAnyObject() -> Any {
